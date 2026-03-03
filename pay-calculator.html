@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pay Calculator</title>
+    <link rel="stylesheet" href="calculator.css".css">
+</head>
+<body>
+
+<h1>Weekly Setup</h1>
+
+<label>Last Week Second Numbers:
+<input type="number" id="priorSecond">
+</label><br><br>
+
+<label>Last Week Total Addresses:
+<input type="number" id="priorAddies">
+</label><br><br>
+
+<button onclick="calculateBase()">Calculate Base</button>
+
+<h2>Base Rate: R<span id="baseRate">0.00</span></h2>
+
+<h2>Add Address Details</h2>
+
+<label><input type="checkbox" id="id"> ID</label><br>
+<label><input type="checkbox" id="email"> Email</label><br>
+<label><input type="checkbox" id="third"> 3rd Number</label><br>
+<label><input type="checkbox" id="home"> Home Language</label><br>
+<label><input type="checkbox" id="account"> Account</label><br>
+<label><input type="checkbox" id="piq"> PIQ</label><br>
+<label><input type="checkbox" id="bank"> Bank</label><br>
+<label><input type="checkbox" id="medical"> Medical</label><br><br>
+
+<button onclick="addAddress()">Add Address</button>
+
+<h2>Address Log</h2>
+
+<table border="1" id="addressTable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>ID</th>
+            <th>Email</th>
+            <th>3rd</th>
+            <th>Home</th>
+            <th>Account</th>
+            <th>PIQ</th>
+            <th>Bank</th>
+            <th>Medical</th>
+            <th>Total Pay</th>
+            <th>Show Calc</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2>Running Total: R<span id="runningTotal">0.00</span></h2>
+
+<script src="calculator.js"></script>
+</body>
+</html>

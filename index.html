@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Ann Kok | Deep Learning Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2 class="logo">Portfolio</h2>
+        <ul>
+            <li onclick="toggleSection('about')">About Me</li>
+            <li onclick="toggleSection('skills')">Skills</li>
+            <li onclick="toggleSection('projects')">Projects</li>
+            <li onclick="toggleSection('education')">Education</li>
+            <li onclick="toggleSection('academic-record')">Academic Record</li>
+            <li onclick="toggleSection('contact')">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Header -->
+        <header>
+            <img src="profile.png" alt="Profile Photo" class="profile-pic">
+            <h1>Jennifer Ann Kok</h1>
+            <p>Aspiring Deep Learning Engineer passionate about building intelligent systems</p>
+            <button id="mode-toggle">🌙 Dark Mode</button>
+        </header>
+
+        <!-- About Me -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Born and raised on a farm in the Free State, I grew up with a deep curiosity about the world — one that has never stopped growing. I am a final year B.Sc. Data Science student at Eduvos, balancing a full-time on-campus degree with work every morning from 7:30am, and still maintaining an 83% average with distinction-level results across the majority of my modules. I believe that dedication matters more than circumstance, and my academic record reflects that.
+    </p>
+
+    <p>
+        My faith as a Christian is the foundation of everything I do — it shapes my values, my compassion, and my drive to make a meaningful difference in the world. I thrive when I am busy. Idle time is not something I am comfortable with — I would rather be learning something, building something, or helping someone. Work is not a burden to me; it is where I come alive.
+    </p>
+
+    <p>
+        My passions sit at the intersection of mathematics, neuroscience, and artificial intelligence. I am fascinated by the human brain — not just as a biological system, but as the ultimate blueprint for intelligent machines. My long-term goal is to become a deep learning engineer who understands the brain well enough to meaningfully replicate its intelligence in AI systems. I aim to pursue a neuroscience degree alongside my occupation as a Data Scientist to make that vision a reality.
+    </p>
+
+    <p>
+        I am a lifelong learner in every sense — currently studying French, Dutch, and Russian, constantly working through courses beyond my degree, and always looking for the next challenge. I love animals deeply, and one day I hope to open a homeless shelter and give back to those who need it most. Family keeps me grounded: I have two little sisters and a brother who remind me every day why I work as hard as I do.
+    </p>
+
+    <p class="highlight">
+        I do not just study data science — I live it, build with it, and push it further every single day.
+    </p>
+</section>
+
+        <!-- Skills -->
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <!-- Skill Icons -->
+    <div class="skills-icons">
+        <div class="skill-icon" data-category="programming">
+            🖥 Programming
+        </div>
+        <div class="skill-icon" data-category="data-science">
+            📊 Data Science
+        </div>
+        <div class="skill-icon" data-category="ml">
+            🤖 Machine Learning
+        </div>
+        <div class="skill-icon" data-category="computer">
+            💻 Computer Literacy
+        </div>
+        <div class="skill-icon" data-category="tools">
+            🛠 Tools & Systems
+        </div>
+        <div class="skill-icon" data-category="math">
+            📐 Mathematics & Statistics
+        </div>
+    </div>
+
+    <!-- Skill Details -->
+    <div class="skills-details">
+
+        <div class="skills-category" id="programming">
+            <p>Python</p>
+            <p>R</p>
+            <p>SQL</p>
+            <p>C++</p>
+            <p>HTML</p>
+            <p>Bash</p>
+        </div>
+
+        <div class="skills-category" id="data-science">
+            <p>Pandas & NumPy</p>
+            <p>Data Cleaning</p>
+            <p>Feature Engineering</p>
+            <p>EDA</p>
+            <p>Data Visualization</p>
+        </div>
+
+        <div class="skills-category" id="ml">
+            <p>Scikit-Learn</p>
+            <p>Regression & Classification</p>
+            <p>Model Evaluation</p>
+            <p>Neural Networks</p>
+            <p>Basic Cognitive Neuroscience</p>
+        </div>
+
+        <div class="skills-category" id="computer">
+            <p>Microsoft Office Suite</p>
+            <p>Excel – Advanced Formulas, Pivot Tables</p>
+            <p>Command Prompt / Powershell</p>
+        </div>
+
+        <div class="skills-category" id="tools">
+            <p>Git & GitHub</p>
+            <p>Linux</p>
+            <p>VS Code / Jupyter Notebook / R Studio</p>
+            <p>Llama 2</p>
+            <p>Cisco Packet Tracer</p>
+        </div>
+
+        <div class="skills-category" id="math">
+            <p>Linear Algebra</p>
+            <p>Mathematical Modeling in Python</p>
+            <p>Calculus 1,2,3</p>
+            <p>Numerical Analysis</p>
+            <p>Statistical Inference</p>
+            <p>Quantitative Methods & Problem Solving</p>
+            <p>Quantum Mechanics Basics</p>
+        </div>
+
+    </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Pay Calculator</strong> – A web-based tool to calculate my commission-based pay at work daily. 
+                <a href="pay-calculator.html" target="_blank">Open Calculator</a>
+            </li>
+            <li>
+                <strong>Degree Predictor</strong> – AI model that predicts in which tertiary field a student would perform best based on high-school grades.
+            </li>
+        </ul>
+    </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <!-- Current Degree -->
+            <div class="edu-item">
+                <h3>B.Sc. / Data Science</h3>
+                <p>Eduvos | South Africa</p>
+                <p>
+                    Currently pursuing a Bachelor of Science in Data Science, focusing on applied Artificial Intelligence and Machine Learning. 
+                    Developed practical skills in Python, R, SQL, and data visualization while applying statistical and mathematical concepts to solve real-world problems. 
+                    Projects include predictive modeling, neural networks, and deep learning applications.
+                </p>
+            </div>
+
+            <!-- Previous Program / Pivot -->
+            <div class="edu-item">
+                <h3>B.Sc. Actuarial & Financial Mathematics</h3>
+                <p>University of Pretoria (Tuks) | Pretoria, South Africa | 2023</p>
+                <p>
+                    Admitted to one of South Africa’s most competitive quantitative programs, I completed the first year with advanced coursework in probability, statistics, and financial mathematics. 
+                    This provided a strong analytical foundation. I then transitioned to Data Science to pursue my passion for Artificial Intelligence and Machine Learning.
+                </p>
+            </div>
+            
+        </section>
+
+        <!-- Academic Record Section -->
+        <section id="academic-record">
+            <h2>Academic Record</h2>
+            <p>
+                You can view my official academic record below or download the full PDF for offline review.
+            </p>
+
+            <!-- Embed PDF -->
+            <iframe 
+                src="academicrecord.pdf" 
+                width="100%" 
+                height="600px" 
+                style="border:1px solid #ccc; border-radius:8px;">
+            </iframe>
+
+            <!-- Download Button -->
+            <a href="academicrecord.pdf" download class="download-btn">Download Full Academic Record</a>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:jk018885@gmail.com">jk018885@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/CodingBoo314159" target="_blank">github.com/CodingBoo314159</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jennifer-kok-933125264/" target="_blank">linkedin.com/in/jennifer-kok-933125264</a></p>
+            <p>Cell: +27 768517303</p>
+        </section>
+
+    </main>
+
+</div>
+
+<script>
+// Toggle section visibility
+function toggleSection(id) {
+    const sections = document.querySelectorAll("main section");
+    sections.forEach(section => {
+        section.style.display = section.id === id ? 'block' : 'none';
+    });
+}
+
+// Dark / Light mode toggle
+const toggleButton = document.getElementById("mode-toggle");
+toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggleButton.textContent = document.body.classList.contains("dark-mode") ? "☀️ Light Mode" : "🌙 Dark Mode";
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".skill-bar");
+    function animateBars() {
+        const triggerPoint = window.innerHeight * 0.9;
+        bars.forEach(bar => {
+            const top = bar.getBoundingClientRect().top;
+            if (top < triggerPoint) {
+                bar.style.width = bar.dataset.width; // set width from HTML data attribute
+            }
+        });
+    }
+
+    window.addEventListener("scroll", animateBars);
+    animateBars(); // also run on load
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
