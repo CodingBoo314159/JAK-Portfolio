@@ -578,7 +578,11 @@ body.dark-mode .skill-icon:hover {
 body.dark-mode .edu-item p:first-of-type {
   color: #7a6a58;
 }
-
+@media (max-width: 768px) {
+  :root {
+    --sidebar-w: 0px;
+  }
+}
 @media (max-width: 768px) {
   .layout {
     flex-direction: column !important;
