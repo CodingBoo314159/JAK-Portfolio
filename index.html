@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennifer Ann Kok | Deep Learning Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+@media (max-width: 768px) {
+  :root { --sidebar-w: 0px; }
+  .layout { flex-direction: column; }
+  .sidebar {
+    position: fixed !important;
+    top: 0; left: 0; right: 0;
+    width: 100vw !important;
+    height: 55px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 0 0.8rem !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0,229,255,0.15) !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+  .sidebar ul {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 5px !important;
+  }
+  .sidebar li {
+    font-size: 0.6rem !important;
+    padding: 5px 8px !important;
+    white-space: nowrap !important;
+  }
+  .logo {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+    margin-right: 0.8rem !important;
+    font-size: 0.7rem !important;
+    white-space: nowrap !important;
+  }
+  .content {
+    margin-left: 0 !important;
+    margin-top: 60px !important;
+    max-width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
@@ -337,6 +381,9 @@ toggleButton.addEventListener("click", () => {
 })();
 </script>
 
+<script src="script.js"></script>
+</body>
+</html>
 <script src="script.js"></script>
 </body>
 </html>
